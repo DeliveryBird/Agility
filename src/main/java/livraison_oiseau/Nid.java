@@ -43,13 +43,7 @@ public class Nid
         return oiseaux.isEmpty();
     }
 
-    public void setMatiere(String matiere) {
-        this.matiere = matiere;
-    }
 
-    public void setCapacite(int capacite) {
-        this.capacite = capacite;
-    }
 
     /**
      * Constructeur d'objets de classe agilite.tp1.oiseau.com.livraison_oiseau.Nid
@@ -61,9 +55,7 @@ public class Nid
         this.capacite = capacite;
     }
 
-    public String getMatiere(){
-        return matiere;
-    }
+
     public int getCapacite(){
         return capacite;
     }

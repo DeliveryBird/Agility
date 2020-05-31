@@ -25,21 +25,6 @@ public class Oiseau
         this.nid = nid;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setCouleur(String couleur) {
-        this.couleur = couleur;
-    }
-
-    public boolean isAiles() {
-        return ailes;
-    }
-
-    public void setAiles(boolean ailes) {
-        this.ailes = ailes;
-    }
 
     /**
      * Constructeur d'objets de classe agilite.tp1.oiseau.com.livraison_oiseau.Oiseau
@@ -55,12 +40,7 @@ public class Oiseau
     public String getType(){
         return type;
     }
-    public String getCouleur(){
-        return couleur;
-    }
-    public boolean getAiles(){
-        return ailes;
-    }
+
 
     public String bouger(){
         if (ailes){
