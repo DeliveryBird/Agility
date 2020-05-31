@@ -7,6 +7,6 @@ Feature: US_006 Parcourir le contenu du colis
   Afin de faciliter la livraison
 
   Scenario : Recherche d'oiseau dans le colis
-    Given Un colis peut contenir d'autres colis
+    Given Un colis contient d'autres colis
     When l'éleveur parcourt la composition de son colis 
-    Then trouver facilemen$t les oiseaux lors de la livraison
+    Then trouver facilement les oiseaux lors de la livraison
