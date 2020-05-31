@@ -2,7 +2,7 @@ package stepDefs;
 
 import java.util.ArrayList;
 import java.util.List;
-import cucumber.api.PendingException;
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
