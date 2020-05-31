@@ -1,5 +1,6 @@
 package livraison_oiseau;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public class Nid
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private String matiere;
     private int capacite;
-    private List<Oiseau> oiseaux;
+    private List<Oiseau> oiseaux = new ArrayList<>();
 
     public List<Oiseau> getOiseaux() {
         return oiseaux;
