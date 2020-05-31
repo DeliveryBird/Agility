@@ -3,13 +3,10 @@ Feature: US_000 Enregistrer les colis
   Je veux être sûr que le poids de mon colis est correct en fonction des charges ajoutées
   Afin de m'assurer que le colis a été bien chargé
 
-  Scenario Outline: calcul du poids du colis
-    Given le chargement d'un colis <pack1> avec un poids initial de 0.1
-    When le client charge le colis avec une charge <charge1>
-    Then le poids du colis <weight1> sera automatiquement calculé en ajoutant la charge <charge1>
+  Scenario : calcul du poids du colis
+    Given le colis <pack1> pèse initialement 0.1 kg
+    When le client charge le colis <pack1> avec une charge <charge1>
+    Then le nouveau poids du colis <pack1> sera automatiquement calculé
 
-    Examples:
-      |pack1 |charge1|weight1|
-      |colis1|0.0    |0.1    |
-      |colis2|1.9    |2.0    |
+
 

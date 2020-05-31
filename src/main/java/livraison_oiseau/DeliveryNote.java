@@ -29,6 +29,10 @@ public class DeliveryNote
         price = 0;
     }
 
+    public DeliveryNote(List<Package> packageList) {
+        this.packageList = packageList;
+    }
+
     /**
      * a setter for the package
      */

@@ -53,11 +53,11 @@ public class TestRunner_US003_ajouterOiseauAuNid {
         throw new PendingException();
     }
 
-    @When("^le dresseur ajoute l'oiseau au nid$")
+    /*@When("^le dresseur ajoute l'oiseau au nid$")
     public void leDresseurAjouteOiseauAuNid2() throws Throwable {
         this.nid2.setOiseau(oiseau5);
         throw new PendingException();
-    }
+    }*/
 
     @Then("^le nid reste tel quel et l'oiseau n'est pas ajouté$")
     public void oiseauPasAjouteAuNid() throws Throwable {

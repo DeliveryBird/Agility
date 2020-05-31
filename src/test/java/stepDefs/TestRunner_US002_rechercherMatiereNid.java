@@ -47,7 +47,7 @@ public class TestRunner_US002_rechercherMatiereNid {
         throw new PendingException();
     }
 
-    //Critères d'acceptance 2 : il n'existe aucun oiseau habitant le nid
+    /*//Critères d'acceptance 2 : il n'existe aucun oiseau habitant le nid
     @Given("^le nid et l’index de l'oiseau habitant ce nid$")
     public void leNid2EtIndexOiseau() throws Throwable {
         assertTrue(nid2.isEmpty());
@@ -66,5 +66,5 @@ public class TestRunner_US002_rechercherMatiereNid {
         assertEquals("nid en Paille", nid2.habitat(2));
         throw new PendingException();
     }
-
+*/
 }

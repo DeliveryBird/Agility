@@ -31,10 +31,10 @@ public class TestRunner_US001_rechercherOiseaux {
         throw new PendingException();
     }
 
-    @When("^le dresseur valide la recherche$")
+    /*@When("^le dresseur valide la recherche$")
     public void leDresseurValideLaRecherche() throws Throwable {
         throw new PendingException();
-    }
+    }*/
 
     @Then("^la liste des oiseaux habitants le nid est retournee$")
     public void laListeDesOiseauxHabitantsLeNidEstRetournee() throws Throwable {
