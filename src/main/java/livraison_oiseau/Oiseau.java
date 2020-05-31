@@ -37,6 +37,9 @@ public class Oiseau implements Composant
         this.couleur = couleur;
         this.ailes = ailes;
     }
+    public  Oiseau(double weight){
+        this.weight=weight;
+    }
 
     public String getType(){
         return type;

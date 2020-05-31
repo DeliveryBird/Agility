@@ -24,6 +24,7 @@ public class Package implements  Composant{
     private Collection children;
 
 
+
     /**
      * Package class constructor
      */
@@ -53,6 +54,9 @@ public class Package implements  Composant{
 
     }
 
+    public Package(){
+
+    }
 
     public void add(Composant c) {
         children.add(c);
@@ -61,6 +65,11 @@ public class Package implements  Composant{
     public void remove(Composant c){
         children.remove(c);
     }
+
+    public Collection getChildren() {
+        return children;
+    }
+
     /**
      * a setter for the address
      */
@@ -104,6 +113,7 @@ public class Package implements  Composant{
     public Iterator<Package> createIterator(){
         return children.iterator();
     }
+
 
 
     @Override
