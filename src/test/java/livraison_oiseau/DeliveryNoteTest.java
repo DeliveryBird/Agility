@@ -2,6 +2,7 @@ package livraison_oiseau;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import io.cucumber.java.Before;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -9,7 +10,7 @@ import java.util.List;
 
 class DeliveryNoteTest {
 
-
+    @Test
     public void getPack() {
         DeliveryNote deliveryNote1 = new DeliveryNote();
         Package pack1 = new Package("Paris","marie");
@@ -26,7 +27,7 @@ class DeliveryNoteTest {
 
         assertTrue (expectedPackageList.equals (returnedPackageList));
     }
-
+    @Test
     public void getPrice() {
         DeliveryNote deliveryNote1 = new DeliveryNote();
 
@@ -34,17 +35,18 @@ class DeliveryNoteTest {
         double returnedPrice = deliveryNote1.getPrice();
         assertTrue(expectedPrice == returnedPrice);
     }
-
+    @Test
     void getTotalWeight() {
         DeliveryNote deliveryNote1 = new DeliveryNote();
         Package pack1 = new Package("Paris","marie",0.9);
         Package pack2 = new Package("Lyon","Julienne",0.2);
-
+        deliveryNote1.packageList.add(pack1);
+        deliveryNote1.packageList.add(pack2);
         double expectedTotalWeight = 1.1;
         double returnedTotalWeight = deliveryNote1.getTotalWeight();
         assertTrue(expectedTotalWeight == returnedTotalWeight);
     }
-
+    @Test
     public void calculationPrice() {
         DeliveryNote deliveryNote1 = new DeliveryNote();
         Package pack1 = new Package("Paris","marie",0.9);
