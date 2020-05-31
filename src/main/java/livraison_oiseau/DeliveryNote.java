@@ -60,7 +60,6 @@ public class DeliveryNote
     {
         for (Package pack : packageList)
             totalWeight += pack.getWeight();
-
         return totalWeight;
     }
 

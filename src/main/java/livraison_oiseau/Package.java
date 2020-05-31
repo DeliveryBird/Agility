@@ -98,26 +98,24 @@ public class Package implements  Composant{
     }
 
 
-    public Iterator getChildren() {
-        assert null != children;
-        return children.iterator();
-    }
 
 
 
-    public Iterator createIterator(){
+    public Iterator<Package> createIterator(){
         return children.iterator();
     }
 
 
     @Override
     public double getWeight() {
-        int result = 0;
-        for (CompositeIterator i = (CompositeIterator) children.iterator(); i.hasNext(); ) {
-             Object objet = i.next();
-             Composant composant = (Composant)objet;
-             result += composant.getWeight(); }
-        return result; }
+        double result= weight;
+        Composant composant;
+        Iterator<Package> i = createIterator();
+        while (i.hasNext() ) {
+            composant=(Composant)i.next();
+             result+= composant.getWeight(); }
+        return result;
+    }
 
 
 }
