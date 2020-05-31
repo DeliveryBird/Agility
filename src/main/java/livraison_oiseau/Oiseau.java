@@ -8,7 +8,7 @@ package livraison_oiseau;
  * @author (votre nom)
  * @version (un numéro de version ou une date)
  */
-public class Oiseau
+public class Oiseau implements Composant
 {
     // ici, les attributs de l'oiseau : Type et couleur de l'oiseau,
     //Ailes est une variable booléenne pour dire si l'oiseau a des ailes
@@ -16,6 +16,7 @@ public class Oiseau
     private String couleur;
     private boolean ailes;
     private Nid nid;
+    private double weight;
 
     public Nid getNid() {
         return nid;
@@ -50,5 +51,11 @@ public class Oiseau
             return "marche";
         }
     }
+
+    @Override
+    public double getWeight() {
+        return this.weight;
+    }
+
 }
 

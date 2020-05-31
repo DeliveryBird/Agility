@@ -1,6 +1,10 @@
 package livraison_oiseau;
 
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+
 /**
  *
  * When creating a package, it is empty so its weight is only 100grams.
@@ -9,14 +13,15 @@ package livraison_oiseau;
  * @author Julienne & Marie
  * @version (20 / 03 / 20)
  */
-public class Package
-{
+public class Package implements  Composant{
     public DeliveryNote DeliveryNote;
     //instance variables
 
     private double weight;
     private String address;
     private String recipient;
+
+    private Collection children;
 
 
     /**
@@ -28,6 +33,7 @@ public class Package
         this.address = address;
         weight = 0.1;
         this.recipient = recipient;
+        children=new ArrayList();
     }
 
     public Package(String address, String recipient, double weight)
@@ -36,24 +42,25 @@ public class Package
         this.address = address;
         this.weight = weight;
         this.recipient = recipient;
+        children=new ArrayList();
     }
 
     public Package(double weight)
     {
         //initializing variables
         this.weight = weight;
+        children=new ArrayList();
+
     }
 
 
-
-    /**
-     * a getter for the weight
-     */
-    public double getWeight()
-    {
-        return weight;
+    public void add(Composant c) {
+        children.add(c);
     }
 
+    public void remove(Composant c){
+        children.remove(c);
+    }
     /**
      * a setter for the address
      */
@@ -89,4 +96,28 @@ public class Package
         return weight;
 
     }
+
+
+    public Iterator getChildren() {
+        assert null != children;
+        return children.iterator();
+    }
+
+
+
+    public Iterator createIterator(){
+        return children.iterator();
+    }
+
+
+    @Override
+    public double getWeight() {
+        int result = 0;
+        for (CompositeIterator i = (CompositeIterator) children.iterator(); i.hasNext(); ) {
+             Object objet = i.next();
+             Composant composant = (Composant)objet;
+             result += composant.getWeight(); }
+        return result; }
+
+
 }
