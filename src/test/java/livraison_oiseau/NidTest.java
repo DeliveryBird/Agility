@@ -42,10 +42,10 @@ public class NidTest
     {
         // Initialisez ici vos engagements
         nid1 = new Nid("Brindilles", 4);
-        oiseau1= new Oiseau("Pigeon", "Gris", false);
-        oiseau2 = new Oiseau("Rougegorge", "Orange", true);
-        oiseau3 = new Oiseau("Aigle", "Marron", true);
-        oiseau4 = new Oiseau("Autruche", "Noir", false);
+        oiseau1= new Oiseau("Pigeon", false);
+        oiseau2 = new Oiseau("Rougegorge", true);
+        oiseau3 = new Oiseau("Aigle", true);
+        oiseau4 = new Oiseau("Autruche", false);
         nid1.setOiseau(oiseau1);
         oiseau1.setNid(nid1);
         nid1.setOiseau(oiseau2);

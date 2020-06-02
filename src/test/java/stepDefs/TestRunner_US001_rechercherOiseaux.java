@@ -15,10 +15,10 @@ import static org.junit.Assert.*;
 public class TestRunner_US001_rechercherOiseaux {
 
     Nid nid1 = new Nid("Brindilles", 4);
-    Oiseau oiseau1= new Oiseau("Pigeon", "Gris", false);
-    Oiseau oiseau2 = new Oiseau("Rougegorge", "Orange", true);
-    Oiseau oiseau3 = new Oiseau("Aigle", "Marron", true);
-    Oiseau oiseau4 = new Oiseau("Autruche", "Noir", false);
+    Oiseau oiseau1= new Oiseau("Pigeon", false);
+    Oiseau oiseau2 = new Oiseau("Rougegorge", true);
+    Oiseau oiseau3 = new Oiseau("Aigle", true);
+    Oiseau oiseau4 = new Oiseau("Autruche", false);
 
     @Given("^le nid$")
     public void leNid() throws Throwable {

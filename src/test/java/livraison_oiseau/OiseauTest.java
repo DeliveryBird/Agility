@@ -56,8 +56,8 @@ public class OiseauTest
     {
         // Initialisez ici vos engagements
 
-        oiseau1 = new Oiseau("Pigeon", "Gris", false);
-        oiseau2 = new Oiseau("Aigle", "Marron", true);
+        oiseau1 = new Oiseau("Pigeon", false);
+        oiseau2 = new Oiseau("Aigle", true);
         nid1 = new Nid("rotin",5);
         oiseau1.setNid(nid1);
         oiseau2.setNid(nid1);

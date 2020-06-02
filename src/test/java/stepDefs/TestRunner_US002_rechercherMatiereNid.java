@@ -15,10 +15,10 @@ import static org.junit.Assert.assertTrue;
 public class TestRunner_US002_rechercherMatiereNid {
 
     Nid nid1 = new Nid("Brindilles", 4);
-    Oiseau oiseau1= new Oiseau("Pigeon", "Gris", false);
-    Oiseau oiseau2 = new Oiseau("Rougegorge", "Orange", true);
-    Oiseau oiseau3 = new Oiseau("Aigle", "Marron", true);
-    Oiseau oiseau4 = new Oiseau("Autruche", "Noir", false);
+    Oiseau oiseau1= new Oiseau("Pigeon", false);
+    Oiseau oiseau2 = new Oiseau("Rougegorge", true);
+    Oiseau oiseau3 = new Oiseau("Aigle", true);
+    Oiseau oiseau4 = new Oiseau("Autruche", false);
     Nid nid2 = new Nid("Paille", 5);
 
     //Critères d'acceptance 1 : il existe au moins un oiseau habitant le nid

@@ -12,11 +12,11 @@ import static org.junit.Assert.*;
 public class TestRunner_US003_ajouterOiseauAuNid {
 
     Nid nid1 = new Nid("Brindilles", 6);
-    Oiseau oiseau1= new Oiseau("Pigeon", "Gris", false);
-    Oiseau oiseau2 = new Oiseau("Rougegorge", "Orange", true);
-    Oiseau oiseau3 = new Oiseau("Aigle", "Marron", true);
-    Oiseau oiseau4 = new Oiseau("Autruche", "Noir", false);
-    Oiseau oiseau5 = new Oiseau("Chouette", "Blanc", true);
+    Oiseau oiseau1= new Oiseau("Pigeon", false);
+    Oiseau oiseau2 = new Oiseau("Rougegorge", true);
+    Oiseau oiseau3 = new Oiseau("Aigle", true);
+    Oiseau oiseau4 = new Oiseau("Autruche", false);
+    Oiseau oiseau5 = new Oiseau("Chouette", true);
     Nid nid2 = new Nid("Paille", 1);
 
     //Critères d'acceptance 1 : il reste de l'espace au sein du nid
