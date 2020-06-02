@@ -13,7 +13,7 @@ import java.util.Iterator;
  * @author Julienne & Marie
  * @version (20 / 03 / 20)
  */
-public class Package implements  Composant{
+public class Package implements  Aggregate, Composant{
     public DeliveryNote DeliveryNote;
     //instance variables
 
