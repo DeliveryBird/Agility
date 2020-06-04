@@ -5,5 +5,5 @@ Feature: US_006 Composition du Colis
 
   Scenario : séparation des oiseaux dans les colis
     Given Un colis peut contenir d'autres colis afin de séparer les oiseaux
-    When Le Livreur rempli le colis
+    When Le Livreur rempli le colis  avec l'oiseau
     Then Il pourra y mettre un colis ou un oiseau

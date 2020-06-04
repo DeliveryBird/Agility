@@ -25,15 +25,14 @@ public class CompositionColisStepDefs {
         assertTrue(pack1.getChildren().equals(pack2));
 
     }
-    @When("Le Livreur rempli le colis")
+    @When("Le Livreur rempli le colis <pack2> avec l'oiseau <oiseau1>")
     public void chargeColis() throws Exception {
-
+        pack2.add(oiseau1);
     }
     @Then("Il pourra y mettre un colis <pack2> ou un oiseau <oiseau1>")
     public void choixDuComposant() throws Exception {
-        pack2.add(oiseau1);
         assertTrue(pack2.getChildren().equals(oiseau1));
-        assertTrue(pack1.getChildren().contains(pack2) && pack1.getChildren().contains(oiseau1));
+        assertTrue(pack1.getChildren().equals(pack2) && pack1.getChildren().contains(oiseau1));
 
     }
 }
