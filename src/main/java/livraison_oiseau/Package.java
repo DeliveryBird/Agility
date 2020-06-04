@@ -55,10 +55,17 @@ public class Package implements  Aggregate, Composant{
     }
 
     public Package(){
+<<<<<<< HEAD
         children=new ArrayList();
     }
 
     public void add(Composant c){
+=======
+
+    }
+
+    public void add(Composant c) {
+>>>>>>> 83652f84d29e63074536b7eb8481058d59986d36
         children.add(c);
     }
 

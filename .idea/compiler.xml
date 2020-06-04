@@ -6,9 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="Agility-master" />
         <module name="Agility" />
         <module name="Livraison_Oiseau" />
+=======
+        <module name="Livraison_Oiseau" />
+        <module name="Agility" />
+>>>>>>> 83652f84d29e63074536b7eb8481058d59986d36
       </profile>
     </annotationProcessing>
   </component>

@@ -80,7 +80,11 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
+<<<<<<< HEAD
             <version>5.6.0</version>
+=======
+            <version>3.0.2</version>
+>>>>>>> 83652f84d29e63074536b7eb8481058d59986d36
             <scope>test</scope>
         </dependency>
 
